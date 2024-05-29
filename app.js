@@ -1,7 +1,7 @@
 let tg = window.Telegram.Webapp;
 
-let first_point = 'Москва, Льва Толстого 16';
-let second_point = 'Москва, Пушкина 12';
+let first_point = 'Красноярск, Мате Залки 29';
+let second_point = 'Красноярск, Академика Киренского 24к1';
 let time = '';
 
 
