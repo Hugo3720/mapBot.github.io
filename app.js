@@ -10,7 +10,7 @@ let first_point = 'Москва, Льва Толстого 16';
 let second_point = 'Москва, Пушкина 12';
 let time = '';
 
-document.getElementsById('map').addEventListener(onchange(() => {
+document.getElementById('map').addEventListener(onchange(() => {
     const hash = window.location.hash.slice(1);
     console.log(hash);
 
