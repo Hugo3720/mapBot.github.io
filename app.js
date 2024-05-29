@@ -15,16 +15,6 @@ ymaps.ready(function () {
         // Добавим панель маршрутизации.
         controls: ['routePanelControl']
     });
-
-    
-   
-    const hash = window.location.hash.slice(1);
-    console.log(hash);
-
-    const params = new URLSearchParams('startapp');
-    console.log(params.get('tgWebAppStartParam'));
-
-    document.getElementById('12321').textContent = `${params.get('startapp')}`
    
 
     var control = myMap.controls.get('routePanelControl');
