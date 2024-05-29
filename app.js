@@ -1,5 +1,4 @@
 let tg = window.Telegram.Webapp;
-tg.expand();
 
 const params = new URLSearchParams(hash);
 console.log(params.get('tgWebAppStartParam'));
