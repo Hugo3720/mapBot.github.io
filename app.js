@@ -23,15 +23,15 @@ ymaps.ready(function () {
     });
 
     
-    document.getElementById('map').addEventListener(onchange(() => {
-        const hash = window.location.hash.slice(1);
-        console.log(hash);
+   
+    const hash = window.location.hash.slice(1);
+    console.log(hash);
 
-        const params = new URLSearchParams(hash);
-        console.log(params.get('tgWebAppStartParam'));
+    const params = new URLSearchParams(hash);
+    console.log(params.get('tgWebAppStartParam'));
 
-        document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
-    }))
+    document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
+   
 
     var control = myMap.controls.get('routePanelControl');
 
