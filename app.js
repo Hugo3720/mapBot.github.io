@@ -80,4 +80,5 @@ ymaps.ready(function () {
     });  
 
     myMap.controls.add(switchPointsButton);
+    document.getElementById('12321').textContent = `${hash}`;
 });
