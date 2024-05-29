@@ -21,7 +21,7 @@ ymaps.ready(function () {
     const hash = window.location.hash.slice(1);
     console.log(hash);
 
-    const params = new URLSearchParams(hash);
+    const params = new URLSearchParams('startapp');
     console.log(params.get('tgWebAppStartParam'));
 
     document.getElementById('12321').textContent = `${params.get(hash)}`
