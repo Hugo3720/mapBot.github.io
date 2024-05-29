@@ -1,7 +1,5 @@
 let tg = window.Telegram.Webapp;
 
-const params = new URLSearchParams(hash);
-console.log(params.get('tgWebAppStartParam'));
 
 let first_point = 'Москва, Льва Толстого 16';
 let second_point = 'Москва, Пушкина 12';
