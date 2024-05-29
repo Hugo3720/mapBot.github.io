@@ -17,7 +17,7 @@ document.getElementsById('map').addEventListener(onchange(() => {
     const params = new URLSearchParams(hash);
     console.log(params.get('tgWebAppStartParam'));
 
-    document.getElementById('12321').textContent = `${hash}`
+    document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
 }))
 
 
