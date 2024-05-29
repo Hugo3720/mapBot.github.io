@@ -10,6 +10,19 @@ let first_point = 'Москва, Льва Толстого 16';
 let second_point = 'Москва, Пушкина 12';
 let time = '';
 
+document.getElementsById('map').addEventListener(onchange(() => {
+    const hash = window.location.hash.slice(1);
+    console.log(hash);
+
+    const params = new URLSearchParams(hash);
+    console.log(params.get('tgWebAppStartParam'));
+
+    document.getElementById('12321').textContent = `${hash}`
+}))
+
+
+
+
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [56.032520, 92.889993],
@@ -80,5 +93,4 @@ ymaps.ready(function () {
     });  
 
     myMap.controls.add(switchPointsButton);
-    document.getElementById('12321').textContent = `${hash}`;
 });
