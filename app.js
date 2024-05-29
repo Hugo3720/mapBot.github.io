@@ -1,11 +1,5 @@
 let tg = window.Telegram.Webapp;
 
-const hash = window.location.hash.slice(1);
-console.log(hash);
-
-const params = new URLSearchParams(hash);
-console.log(params.get('tgWebAppStartParam'));
-
 let first_point = 'Москва, Льва Толстого 16';
 let second_point = 'Москва, Пушкина 12';
 let time = '';
