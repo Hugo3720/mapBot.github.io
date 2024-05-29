@@ -10,15 +10,6 @@ let first_point = 'Москва, Льва Толстого 16';
 let second_point = 'Москва, Пушкина 12';
 let time = '';
 
-document.getElementById('map').addEventListener(onchange(() => {
-    const hash = window.location.hash.slice(1);
-    console.log(hash);
-
-    const params = new URLSearchParams(hash);
-    console.log(params.get('tgWebAppStartParam'));
-
-    document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
-}))
 
 
 
@@ -30,6 +21,17 @@ ymaps.ready(function () {
         // Добавим панель маршрутизации.
         controls: ['routePanelControl']
     });
+
+    
+    document.getElementById('map').addEventListener(onchange(() => {
+        const hash = window.location.hash.slice(1);
+        console.log(hash);
+
+        const params = new URLSearchParams(hash);
+        console.log(params.get('tgWebAppStartParam'));
+
+        document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
+    }))
 
     var control = myMap.controls.get('routePanelControl');
 
