@@ -24,7 +24,7 @@ ymaps.ready(function () {
     const params = new URLSearchParams(hash);
     console.log(params.get('tgWebAppStartParam'));
 
-    document.getElementById('12321').textContent = `${params.get('tgWebAppStartParam')}`
+    document.getElementById('12321').textContent = `${params.get(hash)}`
    
 
     var control = myMap.controls.get('routePanelControl');
